@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title Here</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+      }
+
+      header {
+        background-color: black;
+        padding: 20px;
+        width: 100%;
+      }
+      #content{
+
+        margin: 20px;
+      }
+      footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        padding: 20px;
+        text-align: center;
+      }
+
+      footer p {
+        /* Corrected selector to p (not p1) */
+        color: #D7FC4E;
+      }
+
+      body {
+        background-color: #ACACAB;
+        margin: 0;
+        
+
+        ::selection {
+          background-color:#D7FC4E;
+          color: black;
+        }
+      }
+
+      nav {
+        font-size: large;
+        text-align: center;
+      }
+
+      nav a {
+        color: rgb(255, 255, 255);
+        margin-right: 40px;
+        text-decoration: none;
+        transition: color 200ms ease;
+        /* Fixed transition for color only */
+      }
+
+      nav a:hover {
+        color: #D7FC4E;
+        text-decoration: dotted;
+      }
+    </style>
+  </head>
+  <header>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Pricing</a>
+    </nav>
+  </header>
+  <body>
+    <main id="content">
+      <h1>Welcome to My Website!</h1>
+      <p>This is a sample paragraph to demonstrate the use of headings and paragraphs in HTML. You can add more content here, such as text, images, or videos.</p>
+      <h2>Here are some additional features:</h2>
+      <p>You can use different heading levels (h1, h2, h3, etc.) to structure your content and improve readability.</p>
+      <p>Paragraphs are used to group related sentences together. You can add multiple paragraphs to create a longer section of text.</p>
+    </main>
+    <footer>
+      <p>&copy; 2024 Delroy Pires</p>
+    </footer>
+  </body>
+</html>
